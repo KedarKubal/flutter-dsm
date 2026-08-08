@@ -125,12 +125,12 @@ class DsmButton extends HookWidget {
         onTap: _isDisabled ? null : onPressed,
         child: Semantics(
           button: true,
-          container: true,   // <-- add this line
+          container: true, // <-- add this line
           excludeSemantics: true,
           enabled: !_isDisabled,
           label: semanticsLabel ?? label,
           focusable: !_isDisabled,
-	  onTap: _isDisabled ? null : onPressed,
+          onTap: _isDisabled ? null : onPressed,
           child: Focus(
             child: Builder(
               builder: (BuildContext context) {

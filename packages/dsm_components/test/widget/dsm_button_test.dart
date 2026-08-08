@@ -100,7 +100,8 @@ void main() {
       );
 
       expect(
-        tester.getSemantics(find.bySemanticsLabel('Delete this item permanently')),
+        tester.getSemantics(
+            find.bySemanticsLabel('Delete this item permanently')),
         matchesSemantics(
           label: 'Delete this item permanently',
           isButton: true,

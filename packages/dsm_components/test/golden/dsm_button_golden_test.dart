@@ -70,9 +70,10 @@ void main() {
       );
 
       await screenMatchesGolden(
-	tester,
-	'dsm_button_states',
-	customPump: (WidgetTester tester) => tester.pump(const Duration(milliseconds: 100)),
+        tester,
+        'dsm_button_states',
+        customPump: (WidgetTester tester) =>
+            tester.pump(const Duration(milliseconds: 100)),
       );
     });
 
